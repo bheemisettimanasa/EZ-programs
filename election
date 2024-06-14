@@ -1,0 +1,42 @@
+#election
+#you are the head of the election committee in your village.each political party is associated
+n=int(input())
+a=list(map(int,input().split()))
+d={}
+if n==1:
+ print(a[0]) 
+else:
+ for i in a:
+   if i in d:
+     d[i] +=1
+   else:
+     d[i]=1
+ans=-1
+vals=list(d.items())
+print(vals)
+vals.sort(reverse=True,key=lambda x:x[1])
+print(vals)
+if len(vals)==1:
+  ans=vals[0][0]
+else:
+  if vals[0][1]==vals[1][1]:
+    ans=-1
+  else:
+    ans=vals[0][0]
+print(ans)
+
+
+
+
+'''#no of votes
+n=int(input())
+
+#no of votes for each
+
+1122333
+a=list(map(int,input().split()))
+
+3 4
+a,b=map(int,input().split())
+k=lambda x:x%10
+k(123)'''
