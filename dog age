@@ -1,0 +1,4 @@
+#dog age
+'''n=int(input())
+a=n*7
+print(a)'''
