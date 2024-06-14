@@ -1,0 +1,40 @@
+#encode the number without using string
+'''def encode_number(N):
+    str_N = str(N)
+    encoded_str = ''
+    for digit in str_N:
+        squared_digit = int(digit) ** 2
+        encoded_str += str(squared_digit)
+    encoded_number = int(encoded_str)
+    return encoded_number
+input1 = 167
+output = encode_number(input1)
+print(output)'''
+
+
+'''n=167
+def sod(n):
+    c=0
+    while n>0:
+        c=c+1
+        n=n//10
+    return c
+def rev(n):
+    ans=0
+    while n>0:
+        digit=n%10
+        sq=digit**2
+        sod_sq=sod(sq)
+        ans=ans*(10**sod_sq)+sq
+        n=n//10
+    return ans
+ans=rev(n)
+def rev2(n):
+    ans2=0
+    while n>0:
+        digit=n%10
+        ans2=ans2*10+digit
+        n=n//10
+    return ans2
+print(rev2(ans))'''
+
