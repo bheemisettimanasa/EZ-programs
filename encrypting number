@@ -1,0 +1,39 @@
+#encrypting number x=123 with largest digit that is 333 and find the sum of those numbers
+#[321,456,129]=333,666,999=1998
+'''def en(nums):
+    def c(x):
+        d = 0
+        t = x
+        while t > 0:
+            digit = t % 10
+            if digit > d:
+                d = digit
+            t //= 10
+        n = 0
+        f = 1
+        while x > 0:
+            n += d * f
+            x //= 10
+            f *= 10
+        return n
+    total_sum = 0
+    for num in nums:
+        total_sum += c(num)
+    return total_sum
+nums2 = [321,645,984]
+print(en(nums2))'''  
+
+'''def process(n):
+    mx=-999
+    c=0
+    ans=0
+    while n>0:
+        digit=n%10
+        if digit>mx:
+            mx=digit
+        c=c+1
+        n=n//10
+    while c>0:
+        ans=ans*10+mx
+        c=c-1
+    return ans '''
