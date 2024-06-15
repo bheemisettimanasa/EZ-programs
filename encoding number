@@ -1,0 +1,24 @@
+#encoding number
+'''def encode_number(n):
+    result = 0
+    factor = 1
+    
+    while n > 0:
+        digit = n % 10
+        squared = digit * digit
+        
+        if squared < 10:
+            result = squared * factor + result
+            factor *= 10
+        else:
+            result = squared * factor + result
+            factor *= 100
+        
+        n //= 10
+    
+    return result
+
+number = 167
+encoded_number = encode_number(number)
+print(encoded_number)'''
+
