@@ -1,0 +1,12 @@
+#maths test
+'''#alice has a mathematic test for which she has to do at least one question correcctly to pass the test.he decides to do a question which needs her to find the smallest prime number which is larger than a given integer N.your task is to find and return an integer value representing the smallest prime number larger than N.
+input Format:
+    an integer value N
+output format:
+    return an integer reprensting the smallest prime number larger thn N'''
+
+'''n=int(input())
+if n>1:
+    while True:
+        num+=1
+        for i in range(1,num):'''
